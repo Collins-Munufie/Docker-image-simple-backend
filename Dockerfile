@@ -1,14 +1,15 @@
-
 FROM node
 
-WORKDIR /the/workdir/path
+# ENV NODE_ENV=production
+WORKDIR /usr/src/app
 
-COPY package*. json 
+COPY package*.json ./
 
-RUN npm install
+RUN npm install 
 
 COPY . .
 
 EXPOSE 4000
+CMD ["npm", "start"]
+# Use official Node.js LTS Alpine base image
 
-CMD [ "npn", "start" ]
