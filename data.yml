@@ -1,0 +1,11 @@
+---
+  name: the ultimate Docker Course,
+  price: 149,
+  is_published: true,
+  tags:
+   - Software
+   - devops
+  author: {
+    first_name: Collins,
+    last_name:  Munufie
+  }

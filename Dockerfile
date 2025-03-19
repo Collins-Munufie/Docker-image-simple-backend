@@ -13,3 +13,6 @@ EXPOSE 4000
 CMD ["npm", "start"]
 
 
+# docker imaage rm -f $(docker image ls -q)
+
+
